@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MemoryComponent } from './memory/memory.component';
 import { StartingPageComponent } from './starting-page/starting-page.component';
 import { LearningPageComponent } from './learning-page/learning-page.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LearningPageComponent } from './learning-page/learning-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
