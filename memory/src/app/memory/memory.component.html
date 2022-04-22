@@ -1,1 +1,8 @@
-<p>memory works!</p>
+<div class="justify-content-center">
+  <div class="row">
+    <app-game-card class="col-3" *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)">
+    </app-game-card>
+  </div>
+</div>
+
+<!-- (cardClicked)="cardClicked(idx)" -->

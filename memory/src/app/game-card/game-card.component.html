@@ -1,0 +1,17 @@
+<div (click)="cardClicked.emit()" class="m-1">
+  <div *ngIf="data.state === 'default'">
+    <div class="row justify-content-center">
+      <img class="img-responsive" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.digitalphotomentor.com%2Fphotography%2F2015%2F05%2Fgray-card-750px-01.jpg&f=1&nofb=1" [alt]="data.text">
+    </div>
+  </div>
+  <div *ngIf="data.state !== 'default'">
+    <div>
+      <div *ngIf="data.type === 'img'">
+        <img class="img-responsive" [src]="data.img" [alt]="data.text">
+      </div>
+      <div *ngIf="data.type === 'text'">
+        <p>{{data.text}}</p>
+      </div>
+    </div>
+  </div>
+</div>

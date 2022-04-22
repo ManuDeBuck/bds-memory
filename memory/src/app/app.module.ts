@@ -7,13 +7,17 @@ import { MemoryComponent } from './memory/memory.component';
 import { StartingPageComponent } from './starting-page/starting-page.component';
 import { LearningPageComponent } from './learning-page/learning-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GameCardComponent } from './game-card/game-card.component';
+import { FinishedComponent } from './finished/finished.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MemoryComponent,
     StartingPageComponent,
-    LearningPageComponent
+    LearningPageComponent,
+    GameCardComponent,
+    FinishedComponent
   ],
   imports: [
     BrowserModule,

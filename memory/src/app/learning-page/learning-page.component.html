@@ -29,6 +29,8 @@
   </div>
   <div class="mt-5">
     <p>Are you ready to get started?</p>
-    <button (click)="router.navigate(['/memory']);" class="btn btn-lg btn-warning">I am ready</button>
+    <button (click)="router.navigate(['/memory'], {state: {pieces: pieces}});" class="btn btn-lg btn-warning">I am
+      ready
+    </button>
   </div>
 </div>
