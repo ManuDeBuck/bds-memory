@@ -36,14 +36,14 @@ export class MemoryComponent implements OnInit {
     this.cards = [];
     this.pieces.forEach((piece) => {
       this.cards.push({
-        img: piece.img,
-        text: `${piece.title} by ${piece.creator} in ${piece.year} stored in ${piece.museum}`,
+        img: piece.image,
+        text: `${piece.title || "unknown"} by ${piece.creator || "unknown"} in ${piece.creatorLocation || "unknown"} with the material ${piece.material || "unknown"} using technique ${piece.technique || "unknown"} stored in ${piece.location || "unknown"}. The category of the piece is ${piece.category}.`,
         type: "text",
         state: 'default'
       });
       this.cards.push({
-          img: piece.img,
-        text: `${piece.title} by ${piece.creator} in ${piece.year} stored in ${piece.museum}`,
+          img: piece.image,
+          text: `${piece.title || "unknown"} by ${piece.creator || "unknown"} in ${piece.creatorLocation || "unknown"} with the material ${piece.material || "unknown"} using technique ${piece.technique || "unknown"} stored in ${piece.location || "unknown"}. The category of the piece is ${piece.category}.`,
           type: "img",
           state: 'default'
         }
@@ -62,8 +62,7 @@ export class MemoryComponent implements OnInit {
   cardClicked(index: number): void {
     const cardInfo = this.cards[index];
 
-    if (cardInfo.state === 'default' && this.flippedCards.length < 2)
-    {
+    if (cardInfo.state === 'default' && this.flippedCards.length < 2) {
       cardInfo.state = 'flipped';
       this.flippedCards.push(cardInfo);
 

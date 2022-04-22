@@ -11,16 +11,19 @@
         <div class="col-4">
           <div class="card mt-5">
             <img
-              [src]="piece.img"
+              [src]="piece.image"
               class="card-img-top"
               style="width: auto"
               alt="{{ piece.title + ' by ' + piece.creator }}"
             />
             <div class="card-body">
               <h1 class="card-title">{{ piece.title }}</h1>
-              <p><strong>Creator:</strong> {{piece.creator}}</p>
-              <p><strong>Year:</strong> {{piece.year}}</p>
-              <p><strong>Museum:</strong> {{piece.museum}}</p>
+              <p *ngIf="piece.creator"><strong>Creator:</strong> {{piece.creator}}</p>
+              <p *ngIf="piece.location"><strong>Museum:</strong> {{piece.location}}</p>
+              <p *ngIf="piece.creatorLocation"><strong>Location of creator:</strong> {{piece.creator}}</p>
+              <p *ngIf="piece.material"><strong>Material:</strong> {{piece.material}}</p>
+              <p *ngIf="piece.technique"><strong>Technique:</strong> {{piece.technique}}</p>
+              <p *ngIf="piece.category"><strong>Category:</strong> {{piece.category}}</p>
             </div>
           </div>
         </div>

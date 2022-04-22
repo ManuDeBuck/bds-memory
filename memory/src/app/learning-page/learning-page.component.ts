@@ -2,11 +2,15 @@ import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 
 export interface Piece {
-  img: string;
-  title: string;
-  creator: string;
-  year: string;
-  museum: string;
+  "title": string;
+  "image": string;
+  "location": string;
+  "creator": string;
+  "creatorLocation": string;
+  "description": string;
+  "material": string;
+  "technique": string;
+  "category": string;
 }
 
 @Component({
@@ -15,48 +19,290 @@ export interface Piece {
   styleUrls: ['./learning-page.component.css']
 })
 export class LearningPageComponent implements OnInit {
-  public pieces: Piece[] = [{
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Edvard_Munch_-_Melancholy_%281894-96%29.jpg/520px-Edvard_Munch_-_Melancholy_%281894-96%29.jpg",
-    title: "Melancholie",
-    year: "1895",
-    creator: "Edvard Munch",
-    museum: "Oslo"
-  }, {
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Edvard_Munch_-_Melancholy_%281894-96%29.jpg/520px-Edvard_Munch_-_Melancholy_%281894-96%29.jpg",
-    title: "Melancholie",
-    year: "1895",
-    creator: "Edvard Munch",
-    museum: "Oslo"
-  }, {
-    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.1art1.de%2Fimages%2Fimagexl%2Fm%2Fm82966.jpg&f=1&nofb=1",
-    title: "Melancholie",
-    year: "1895",
-    creator: "Edvard Munch",
-    museum: "Oslo"
-  }, {
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Edvard_Munch_-_Melancholy_%281894-96%29.jpg/520px-Edvard_Munch_-_Melancholy_%281894-96%29.jpg",
-    title: "Melancholie",
-    year: "1895",
-    creator: "Edvard Munch",
-    museum: "Oslo"
-  }, {
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Edvard_Munch_-_Melancholy_%281894-96%29.jpg/520px-Edvard_Munch_-_Melancholy_%281894-96%29.jpg",
-    title: "Melancholie",
-    year: "1895",
-    creator: "Edvard Munch",
-    museum: "Oslo"
-  }, {
-    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.copia-di-arte.com%2Fkunst%2Fedvard_munch_11004%2FMelancholie-Edvard-Munch.jpg&f=1&nofb=1",
-    title: "Melancholie",
-    year: "1895",
-    creator: "Edvard Munch",
-    museum: "Oslo"
-  }];
+  public pieces: Piece[] = [];
 
   constructor(public router: Router) {
+    this.getPieces(7).then(el => {
+      this.pieces = el;
+    });
   }
 
   ngOnInit(): void {
+  }
+
+  async getEntities(count: number) {
+    let response = await fetch("https://gent.robindebaetsdev.workers.dev/", {
+      "method": "POST",
+      "body": JSON.stringify({
+        "operationName": "getEntities",
+        "variables": {
+          "limit": count,
+          "skip": 0,
+          "searchValue": {
+            "value": "",
+            "isAsc": false,
+            "relation_filter": [],
+            "randomize": true,
+            "seed": Math.random().toString(),
+            "key": "title",
+            "has_mediafile": true,
+            "skip_relations": false
+          }
+        },
+        "query": `
+
+    query getEntities($limit: Int, $skip: Int, $searchValue: SearchFilter!) {
+    Entities(limit: $limit, skip: $skip, searchValue: $searchValue) {
+        count
+        limit
+        results {
+        ...fullEntity
+        __typename
+        }
+        relations {
+        ...fullRelation
+        __typename
+        }
+        __typename
+    }
+    }
+
+    fragment fullRelation on Relation {
+    key
+    type
+    label
+    value
+    order
+    __typename
+    }
+
+    fragment fullEntity on Entity {
+    id
+    type
+    title: metadata(key: [title]) {
+        key
+        value
+        __typename
+    }
+    scopeNote: metadata(key: [scopeNote]) {
+        key
+        value
+        __typename
+    }
+    description: metadata(key: [description]) {
+        key
+        value
+        __typename
+    }
+    objectNumber: metadata(key: [object_number]) {
+        key
+        value
+        __typename
+    }
+    metadataCollection(
+        key: [title, description, object_number, scopeNote]
+        label: []
+    ) {
+        ...MetadataCollectionFields
+        __typename
+    }
+    primary_mediafile
+    primary_transcode
+    mediafiles {
+        _id
+        original_file_location
+        transcode_filename
+        filename
+        metadata {
+        key
+        value
+        __typename
+        }
+        __typename
+    }
+    relations {
+        key
+        type
+        label
+        value
+        __typename
+    }
+    __typename
+    }
+
+    fragment MetadataCollectionFields on MetadataCollection {
+    label
+    nested
+    data {
+        value
+        unMappedKey
+        label
+        nestedMetaData {
+        ...NestedEntity
+        metadataCollection(
+            key: [title, description, object_number, scopeNote]
+            label: [\"objectnummer\"]
+        ) {
+            label
+            nested
+            data {
+            value
+            unMappedKey
+            label
+            nestedMetaData {
+                ...nestedEndEntity
+                __typename
+            }
+            __typename
+            }
+            __typename
+        }
+        __typename
+        }
+        __typename
+    }
+    __typename
+    }
+
+    fragment NestedEntity on Entity {
+    id
+    type
+    title: metadata(key: [title]) {
+        key
+        value
+        __typename
+    }
+    description: metadata(key: [description]) {
+        key
+        value
+        __typename
+    }
+    objectNumber: metadata(key: [object_number]) {
+        key
+        value
+        __typename
+    }
+    mediafiles {
+        _id
+        original_file_location
+        transcode_filename
+        filename
+        __typename
+    }
+    relations {
+        key
+        type
+        label
+        value
+        __typename
+    }
+    __typename
+    }
+
+    fragment nestedEndEntity on Entity {
+    id
+    type
+    title: metadata(key: [title]) {
+        key
+        value
+        __typename
+    }
+    description: metadata(key: [description]) {
+        key
+        value
+        __typename
+    }
+    objectNumber: metadata(key: [object_number]) {
+        key
+        value
+        __typename
+    }
+    metadataCollection(
+        key: [title, description, object_number, scopeNote]
+        label: [\"objectnummer\"]
+    ) {
+        label
+        nested
+        data {
+        value
+        unMappedKey
+        label
+        __typename
+        }
+        __typename
+    }
+    mediafiles {
+        _id
+        original_file_location
+        transcode_filename
+        filename
+        __typename
+    }
+    relations {
+        key
+        type
+        label
+        value
+        __typename
+    }
+    __typename
+    }`
+      }),
+      "headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      }
+    })
+    return (await response.json())["data"]["Entities"]["results"];
+  }
+
+  async getPieces(count: number) {
+    let entities = await this.getEntities(count);
+    let results = [];
+    for (let entity of entities) {
+      let location = "";
+      let creator = "";
+      let creatorLocation = "";
+      let material = "";
+      let category = "";
+      let technique = "";
+      let description = entity["description"];
+      let relations = entity["relations"];
+      for (let relation of relations) {
+        let label = relation["label"];
+        let value = relation["value"];
+        if (label == "MaterieelDing.beheerder") {
+          location = value;
+        }
+        if (label == "vervaardiger") {
+          creator = value;
+        }
+        if (label == "vervaardiging.plaats") {
+          creatorLocation = value;
+        }
+        if (label == "materiaal") {
+          material = value;
+        }
+        if (label == "techniek") {
+          technique = value;
+        }
+        if (label == "object_category") {
+          category = value;
+        }
+      }
+      results.push({
+        "title": entity["title"][0]["value"],
+        "image": `https://api.collectie.gent/iiif/imageiiif/3/${entity["primary_transcode"]}/full/%5E1000,/0/default.jpg`,
+        "location": location,
+        "creator": creator,
+        "creatorLocation": creatorLocation,
+        "description": description,
+        "material": material,
+        "technique": technique,
+        "category": category
+      });
+    }
+    return results;
   }
 
 }
