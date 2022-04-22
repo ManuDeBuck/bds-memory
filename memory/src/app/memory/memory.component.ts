@@ -37,13 +37,13 @@ export class MemoryComponent implements OnInit {
     this.pieces.forEach((piece) => {
       this.cards.push({
         img: piece.image,
-        text: `${piece.title || "unknown"} by ${piece.creator || "unknown"} in ${piece.creatorLocation || "unknown"} with the material ${piece.material || "unknown"} using technique ${piece.technique || "unknown"} stored in ${piece.location || "unknown"}. The category of the piece is ${piece.category}.`,
+        piece: piece,
         type: "text",
         state: 'default'
       });
       this.cards.push({
           img: piece.image,
-          text: `${piece.title || "unknown"} by ${piece.creator || "unknown"} in ${piece.creatorLocation || "unknown"} with the material ${piece.material || "unknown"} using technique ${piece.technique || "unknown"} stored in ${piece.location || "unknown"}. The category of the piece is ${piece.category}.`,
+          piece: piece,
           type: "img",
           state: 'default'
         }
@@ -94,7 +94,7 @@ export class MemoryComponent implements OnInit {
       }
 
       this.tries += 1;
-    }, 1000);
+    }, 2000);
   }
 
 }

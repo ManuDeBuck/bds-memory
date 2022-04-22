@@ -18,6 +18,7 @@
             />
             <div class="card-body">
               <h1 class="card-title">{{ piece.title }}</h1>
+              <p *ngIf="piece.description">{{piece.description}}</p>
               <p *ngIf="piece.creator"><strong>Creator:</strong> {{piece.creator}}</p>
               <p *ngIf="piece.location"><strong>Museum:</strong> {{piece.location}}</p>
               <p *ngIf="piece.creatorLocation"><strong>Location of creator:</strong> {{piece.creator}}</p>

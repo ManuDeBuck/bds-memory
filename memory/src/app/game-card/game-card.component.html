@@ -1,16 +1,24 @@
 <div (click)="cardClicked.emit()" class="m-1">
   <div *ngIf="data.state === 'default'">
     <div class="row justify-content-center">
-      <img class="img-responsive" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.digitalphotomentor.com%2Fphotography%2F2015%2F05%2Fgray-card-750px-01.jpg&f=1&nofb=1" [alt]="data.text">
+      <img class="img-responsive"
+           src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.digitalphotomentor.com%2Fphotography%2F2015%2F05%2Fgray-card-750px-01.jpg&f=1&nofb=1"
+           [alt]="data.piece.description">
     </div>
   </div>
   <div *ngIf="data.state !== 'default'">
     <div>
       <div *ngIf="data.type === 'img'">
-        <img class="img-responsive" [src]="data.img" [alt]="data.text">
+        <img class="img-responsive" [src]="data.img" [alt]="data.piece.description" style="max-height: 200px;">
       </div>
       <div *ngIf="data.type === 'text'">
-        <p>{{data.text}}</p>
+        <h1 class="card-title">{{ data.piece.title }}</h1>
+        <p *ngIf="data.piece.creator"><strong>Creator:</strong> {{data.piece.creator}}</p>
+        <p *ngIf="data.piece.location"><strong>Museum:</strong> {{data.piece.location}}</p>
+        <p *ngIf="data.piece.creatorLocation"><strong>Location of creator:</strong> {{data.piece.creator}}</p>
+        <p *ngIf="data.piece.material"><strong>Material:</strong> {{data.piece.material}}</p>
+        <p *ngIf="data.piece.technique"><strong>Technique:</strong> {{data.piece.technique}}</p>
+        <p *ngIf="data.piece.category"><strong>Category:</strong> {{data.piece.category}}</p>
       </div>
     </div>
   </div>

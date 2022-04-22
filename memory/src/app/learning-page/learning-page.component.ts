@@ -22,8 +22,8 @@ export class LearningPageComponent implements OnInit {
   public pieces: Piece[] = [];
 
   constructor(public router: Router) {
-    this.getPieces(7).then(el => {
-      this.pieces = el;
+    this.getPieces(10).then(el => {
+      this.pieces = el.slice(0, 6);
     });
   }
 
@@ -259,34 +259,33 @@ export class LearningPageComponent implements OnInit {
   async getPieces(count: number) {
     let entities = await this.getEntities(count);
     let results = [];
-    for (let entity of entities) {
+    for(let entity of entities) {
       let location = "";
       let creator = "";
       let creatorLocation = "";
       let material = "";
       let category = "";
       let technique = "";
-      let description = entity["description"];
       let relations = entity["relations"];
-      for (let relation of relations) {
+      for(let relation of relations) {
         let label = relation["label"];
         let value = relation["value"];
-        if (label == "MaterieelDing.beheerder") {
+        if(label == "MaterieelDing.beheerder") {
           location = value;
         }
-        if (label == "vervaardiger") {
+        if(label == "vervaardiger") {
           creator = value;
         }
-        if (label == "vervaardiging.plaats") {
+        if(label == "vervaardiging.plaats") {
           creatorLocation = value;
         }
-        if (label == "materiaal") {
+        if(label == "materiaal") {
           material = value;
         }
-        if (label == "techniek") {
+        if(label == "techniek") {
           technique = value;
         }
-        if (label == "object_category") {
+        if(label == "object_category") {
           category = value;
         }
       }
@@ -296,7 +295,7 @@ export class LearningPageComponent implements OnInit {
         "location": location,
         "creator": creator,
         "creatorLocation": creatorLocation,
-        "description": description,
+        "description": entity["description"][0]["value"],
         "material": material,
         "technique": technique,
         "category": category
