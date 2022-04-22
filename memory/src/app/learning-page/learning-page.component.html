@@ -1,1 +1,34 @@
-<p>learning-page works!</p>
+<div class="center-text">
+  <div>
+    <h1 class="center-text">Memorize all the necessary information!</h1>
+    <p>Learn some cool things about the art and history pieces and their information. In the next part of the
+      application
+      you will be able to play memory with the art pieces and their information.</p>
+  </div>
+  <div>
+    <div *ngFor="let piece of pieces">
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <div class="card mt-5">
+            <img
+              [src]="piece.img"
+              class="card-img-top"
+              style="width: auto"
+              alt="{{ piece.title + ' by ' + piece.creator }}"
+            />
+            <div class="card-body">
+              <h1 class="card-title">{{ piece.title }}</h1>
+              <p><strong>Creator:</strong> {{piece.creator}}</p>
+              <p><strong>Year:</strong> {{piece.year}}</p>
+              <p><strong>Museum:</strong> {{piece.museum}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5">
+    <p>Are you ready to get started?</p>
+    <button (click)="router.navigate(['/memory']);" class="btn btn-lg btn-warning">I am ready</button>
+  </div>
+</div>
