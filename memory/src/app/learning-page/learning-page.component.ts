@@ -28,7 +28,7 @@ export class LearningPageComponent implements OnInit {
     creator: "Edvard Munch",
     museum: "Oslo"
   }, {
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Edvard_Munch_-_Melancholy_%281894-96%29.jpg/520px-Edvard_Munch_-_Melancholy_%281894-96%29.jpg",
+    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.1art1.de%2Fimages%2Fimagexl%2Fm%2Fm82966.jpg&f=1&nofb=1",
     title: "Melancholie",
     year: "1895",
     creator: "Edvard Munch",
@@ -41,6 +41,12 @@ export class LearningPageComponent implements OnInit {
     museum: "Oslo"
   }, {
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Edvard_Munch_-_Melancholy_%281894-96%29.jpg/520px-Edvard_Munch_-_Melancholy_%281894-96%29.jpg",
+    title: "Melancholie",
+    year: "1895",
+    creator: "Edvard Munch",
+    museum: "Oslo"
+  }, {
+    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.copia-di-arte.com%2Fkunst%2Fedvard_munch_11004%2FMelancholie-Edvard-Munch.jpg&f=1&nofb=1",
     title: "Melancholie",
     year: "1895",
     creator: "Edvard Munch",
