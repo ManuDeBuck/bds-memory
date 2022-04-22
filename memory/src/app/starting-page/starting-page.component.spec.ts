@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { StartingPageComponent } from './starting-page.component';
 
 describe('StartingPageComponent', () => {
@@ -22,4 +21,6 @@ describe('StartingPageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
 });
