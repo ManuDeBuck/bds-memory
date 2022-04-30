@@ -15,9 +15,9 @@ The ArtMory aims to build up the connection between Museums and People. Intially
 
 The following list shows our plan:
 
-- [x] Define our clients
-- [ ] Perona templates
-- [x] Brainstorming 
+- [:white_check_mark:] Define our clients
+- [:white_check_mark:] Perona templates
+- [:white_check_mark:] Brainstorming 
 - [ ] Value Proposition Canvas :+1:
 - [ ] Design application :tada:
 
