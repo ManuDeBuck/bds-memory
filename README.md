@@ -19,8 +19,8 @@ The following list shows our plan:
 - :white_check_mark: Background research
 - :white_check_mark: Perona templates
 - :white_check_mark: Brainstorming 
-- [ ] Value Proposition Canvas :+1:
-- [ ] Design application :tada:
+- :question: Value Proposition Canvas :+1:
+- :question: Design application :tada:
 
 
 
