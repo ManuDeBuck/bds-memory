@@ -5,11 +5,11 @@ The ArtMory aims to build up the connection between Museums and People. Intially
 
 In the following list shows our plan:
 
--[x] Define our clients
--[ ] Perona templates
--[x] Brainstorming 
--[ ] Value Proposition Canvas :+1:
--[ ] Design application :tada:
+- [x] Define our clients
+- [ ] Perona templates
+- [x] Brainstorming 
+- [ ] Value Proposition Canvas :+1:
+- [ ] Design application :tada:
 
 
 
