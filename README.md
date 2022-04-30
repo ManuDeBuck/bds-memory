@@ -4,9 +4,9 @@
 ```
 1. Have you ever wonder what can you do when arriving in city that you never visited? 
 2. Have you ever wonder what can you do in your own city? 
-3. Have you ever wonder what is that art when you seeing that? 
-4. Have you ever wonder what is the name of that art when you seeing that? 
-5. Have you ever wonder who is the name of that art when you seeing that? 
+3. Have you ever wonder what is that art when you saw that? 
+4. Have you ever wonder what is the name of that art when you saw that? 
+5. Have you ever wonder who is the author of that art when you saw that? 
 ```
 
 ## Goal of this project:
