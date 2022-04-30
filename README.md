@@ -8,8 +8,8 @@ In the following list shows our plan:
 -[x] Define our clients
 -[ ] Perona templates
 -[x] Brainstorming 
--[ ] Value Proposition Canvas
--[ ] Design application:tada:
+-[ ] Value Proposition Canvas :+1:
+-[ ] Design application :tada:
 
 ```
 
