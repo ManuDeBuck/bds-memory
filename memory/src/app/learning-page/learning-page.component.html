@@ -1,9 +1,8 @@
 <div class="center-text">
   <div>
-    <h1 class="center-text">Memorize all the necessary information!</h1>
-    <p>Learn some cool things about the art and history pieces and their information. In the next part of the
-      application
-      you will be able to play memory with the art pieces and their information.</p>
+    <h1 class="center-text">Onthou alle belangrijke informatie!</h1>
+    <p>Leer enkele cole dingen over de kunstwerken en historische werken.
+      In dit volgende deel zul je memory spelen met de kunstwerken en historische werken en hun informatie.</p>
   </div>
   <div>
     <div *ngFor="let piece of pieces">
@@ -19,12 +18,12 @@
             <div class="card-body">
               <h1 class="card-title">{{ piece.title }}</h1>
               <p *ngIf="piece.description">{{piece.description}}</p>
-              <p *ngIf="piece.creator"><strong>Creator:</strong> {{piece.creator}}</p>
+              <p *ngIf="piece.creator"><strong>kunstenaar:</strong> {{piece.creator}}</p>
               <p *ngIf="piece.location"><strong>Museum:</strong> {{piece.location}}</p>
               <p *ngIf="piece.creatorLocation"><strong>Location of creator:</strong> {{piece.creator}}</p>
-              <p *ngIf="piece.material"><strong>Material:</strong> {{piece.material}}</p>
-              <p *ngIf="piece.technique"><strong>Technique:</strong> {{piece.technique}}</p>
-              <p *ngIf="piece.category"><strong>Category:</strong> {{piece.category}}</p>
+              <p *ngIf="piece.material"><strong>Materiaal:</strong> {{piece.material}}</p>
+              <p *ngIf="piece.technique"><strong>Techniek:</strong> {{piece.technique}}</p>
+              <p *ngIf="piece.category"><strong>Categorie:</strong> {{piece.category}}</p>
             </div>
           </div>
         </div>
@@ -32,9 +31,8 @@
     </div>
   </div>
   <div class="mt-5">
-    <p>Are you ready to get started?</p>
-    <button (click)="router.navigate(['/memory'], {state: {pieces: pieces}});" class="btn btn-lg btn-warning">I am
-      ready
+    <p>Ben je klaar om te starten?</p>
+    <button (click)="router.navigate(['/memory'], {state: {pieces: pieces}});" class="btn btn-lg btn-warning">Ik ben klaar
     </button>
   </div>
 </div>
