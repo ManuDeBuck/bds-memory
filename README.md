@@ -22,5 +22,14 @@ The following list shows our plan:
 - :question: Value Proposition Canvas :+1:
 - :question: Design application :tada:
 
+## Future Plan
+
+```
+1. Cooperation with Museums located in Ghent and Antwerp 
+2. Adding functions, booking tickects for museums, online shopping for souvenir
+3. Collect user experience 
+4. Improve user interface
+```
+
 
 
