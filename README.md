@@ -28,6 +28,9 @@ The following list shows our plan:
 
 ## Business Model 
 
+
+<img width="648" alt="Screen Shot 2022-05-22 at 11 37 03 PM" src="https://user-images.githubusercontent.com/104195346/169716954-12fe081a-f818-46bd-98c0-ecb5ad043b0b.png">
+
 ## Persona
 
 We target on the students, including the youngs, and tourists. 
