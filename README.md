@@ -26,8 +26,12 @@ The following list shows our plan:
 
 ## Value Proposition Canvas
 
+<img width="747" alt="Screen Shot 2022-05-22 at 11 43 05 PM" src="https://user-images.githubusercontent.com/104195346/169717143-df5ed6e0-f30b-44cf-84c9-a49583afefd0.png">
+
+
 ## Business Model 
 
+For the business model, it fundamentally built based on the customer segments. We target on students and tourists. These users can expect to learn art knowledges, paly memory game, and experience user-friendly website on Artymory. So far, the customer channel for ArtyMory is only the website. But in the coming future the application for smartphone will be created. 
 
 <img width="648" alt="Screen Shot 2022-05-22 at 11 37 03 PM" src="https://user-images.githubusercontent.com/104195346/169716954-12fe081a-f818-46bd-98c0-ecb5ad043b0b.png">
 
