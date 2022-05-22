@@ -19,16 +19,34 @@ The following list shows our plan:
 - :white_check_mark: Background research
 - :white_check_mark: Perona templates
 - :white_check_mark: Brainstorming 
-- :question: Value Proposition Canvas :+1:
+- :white_check_mark: Business Model 
+- :white_check_mark:  Value Proposition Canvas :+1:
 - :question: Design application :tada:
+
+
+## Value Proposition Canvas
+
+## Business Model 
+
+## Persona
+
+We target on the students, including the youngs, and tourists. 
+
+The following form shows the clients that we pictured:
+
+<img width="936" alt="Screen Shot 2022-05-12 at 10 14 39 AM" src="https://user-images.githubusercontent.com/104195346/169716283-b55a2219-94d7-44d6-ab93-c3be7b099f12.png">
+
 
 ## Future Plan
 
 ```
-1. Cooperation with Museums located in Ghent and Antwerp 
-2. Adding functions, booking tickects for museums, online shopping for souvenir
-3. Collect user experience 
-4. Improve user interface
+1. Cooperation with Museums located in Ghent and Antwerp to create interactive feature. 
+2. Creating a referral program which links to the webpage for buying ticket to the museums. 
+3. Collect user experience .
+4. Improve user interface.
+5. Augment art pieces with extra data. 
+6. Add floor information to the website. 
+7. Further analysis for the weakness and strenght of ArtyMory. 
 ```
 
 
