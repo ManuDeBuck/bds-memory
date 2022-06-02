@@ -46,9 +46,7 @@ The following form shows the clients that we pictured:
 
 ## Elvator Pitch
 
-[![Watch the video](https://i.imgur.com/6yV--yTYjTE.png)](https://youtu.be/6yV--yTYjTE) 
-
-<iframe width="1531" height="680" src="https://www.youtube.com/embed/6yV--yTYjTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Watch the video](https://img.youtube.com/vi/6yV--yTYjTE/maxresdefault.jpg)](https://youtu.be/6yV--yTYjTE) 
 
 
 ## ArtyMory Tutorial 
