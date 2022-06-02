@@ -48,8 +48,11 @@ The following form shows the clients that we pictured:
 
 [![Watch the video](https://img.youtube.com/vi/6yV--yTYjTE/maxresdefault.jpg)](https://youtu.be/6yV--yTYjTE) 
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6yV--yTYjTE/0.jpg)](https://youtu.be/6yV--yTYjTE) 
+
 
 ## ArtyMory Tutorial 
+
 
 https://user-images.githubusercontent.com/104195346/171577478-cde7f590-101f-4a5f-8759-8d7fc5bee17c.mp4
 
