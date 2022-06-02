@@ -51,9 +51,12 @@ The following form shows the clients that we pictured:
 
 ## ArtyMory Tutorial 
 
-
 https://user-images.githubusercontent.com/104195346/171577478-cde7f590-101f-4a5f-8759-8d7fc5bee17c.mp4
 
+
+## Pitch Deck
+
+(Click here)[https://docs.google.com/presentation/d/1HAMNyolsDmuxaOwVhPondd7EHm092xnOGSCOUUa_TrM/edit?usp=sharing]
 
 ## Future Plan
 
