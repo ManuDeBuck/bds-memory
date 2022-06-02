@@ -44,6 +44,18 @@ The following form shows the clients that we pictured:
 <img width="936" alt="Screen Shot 2022-05-12 at 10 14 39 AM" src="https://user-images.githubusercontent.com/104195346/169716283-b55a2219-94d7-44d6-ab93-c3be7b099f12.png">
 
 
+## Elvator Pitch
+
+[![Watch the video](https://i.imgur.com/6yV--yTYjTE.png)](https://youtu.be/6yV--yTYjTE) 
+
+<iframe width="1531" height="680" src="https://www.youtube.com/embed/6yV--yTYjTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## ArtyMory Tutorial 
+
+https://user-images.githubusercontent.com/104195346/171577478-cde7f590-101f-4a5f-8759-8d7fc5bee17c.mp4
+
+
 ## Future Plan
 
 ```
