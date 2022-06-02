@@ -56,7 +56,7 @@ https://user-images.githubusercontent.com/104195346/171577478-cde7f590-101f-4a5f
 
 ## Pitch Deck
 
-(Click here)[https://docs.google.com/presentation/d/1HAMNyolsDmuxaOwVhPondd7EHm092xnOGSCOUUa_TrM/edit?usp=sharing]
+[Click here](https://docs.google.com/presentation/d/1HAMNyolsDmuxaOwVhPondd7EHm092xnOGSCOUUa_TrM/edit?usp=sharing)
 
 ## Future Plan
 
