@@ -55,7 +55,7 @@ https://user-images.githubusercontent.com/104195346/171577478-cde7f590-101f-4a5f
 
 ## ArtyMory User Story Demo
 
-[![ArtyMory-User Story Demo](https://img.youtube.com/vi/jSi59WvjxCw.jpg)](https://youtu.be/jSi59WvjxCw) 
+[![ArtyMory-User Story Demo](https://img.youtube.com/vi/jSi59WvjxCw/0.jpg)](https://youtu.be/jSi59WvjxCw) 
 
 ## Pitch Deck
 
