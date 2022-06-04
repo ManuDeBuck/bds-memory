@@ -53,6 +53,9 @@ The following form shows the clients that we pictured:
 
 https://user-images.githubusercontent.com/104195346/171577478-cde7f590-101f-4a5f-8759-8d7fc5bee17c.mp4
 
+## ArtyMory User Story Demo
+
+[![ArtyMory-User Story Demo](https://img.youtube.com/vi/jSi59WvjxCw.jpg)](https://youtu.be/jSi59WvjxCw) 
 
 ## Pitch Deck
 
