@@ -70,5 +70,5 @@ https://user-images.githubusercontent.com/104195346/171577478-cde7f590-101f-4a5f
 7. Further analysis for the weakness and strenght of ArtyMory. 
 ```
 
-
+FINISHED
 
